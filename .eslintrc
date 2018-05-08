@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": ["@exeto", "@exeto/eslint-config-react", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "__DEV__": true
+  }
+}
