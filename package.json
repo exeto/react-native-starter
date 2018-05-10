@@ -10,6 +10,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "start:ios": "react-native run-ios",
     "start:android": "react-native run-android",
+    "debugger": "open 'rndebugger://set-debugger-loc?host=localhost&port=19001'",
     "test": "jest",
     "flow": "flow check",
     "precommit": "lint-staged",
