@@ -11,7 +11,9 @@
     "start:ios": "react-native run-ios",
     "start:android": "react-native run-android",
     "test": "jest",
-    "precommit": "lint-staged"
+    "flow": "flow check",
+    "precommit": "lint-staged",
+    "prepush": "npm run flow"
   },
   "lint-staged": {
     "**/*.js": [
@@ -44,6 +46,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.67.0",
     "husky": "^0.14.3",
     "jest": "22.4.3",
     "lint-staged": "^7.1.0",

@@ -16,6 +16,8 @@ export default () => {
   );
 
   if (__DEV__) {
+    declare var module: any;
+
     module.hot.accept('./rootReducer', () => {
       store.replaceReducer(require('./rootReducer').default);
     });
